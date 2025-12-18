@@ -1,113 +1,126 @@
 {
   "Default": {
-    "description": "Base style - balanced dark humor with wit and edge. Mix observational comedy with slightly twisted perspectives on everyday life.",
+    "name": "Absurdist Spiral (Default)",
+    "description": "Blends cynical social commentary, absurdist logic spirals, deadpan misdirection, and dark wordplay. Stream-of-consciousness rambling with paranoid escalation logic.",
     "is_default": true,
     "position": "center",
+    "color": "#FF1B6D",
+    "characteristics": [
+      "Literal interpretation spirals",
+      "Paranoid escalation logic",
+      "Stream-of-consciousness rambling",
+      "Dark meta-commentary",
+      "Self-aware tangents"
+    ],
+    "tone_markers": ["I mean...", "You know...", "Okay, so...", "What the fuck..."],
+    "delivery_style": "deadpan_escalation",
     "jokes": [
-      "I'm not saying I'm antisocial, but my phone's most used app is 'Do Not Disturb.'",
-      "I went to the gym yesterday. That's enough exercise for the rest of the decade.",
-      "My life is like a romantic comedy, except it's neither romantic nor funny.",
-      "I have a great relationship with failure. We're practically inseparable.",
-      "I tried to be normal once. Worst two minutes of my life.",
-      "My spirit animal is a sloth having an existential crisis.",
-      "I don't have trust issues. I have trust answers, and they're all 'no.'",
-      "I'm on a whiskey diet. I've lost three days already."
+      "I mean, 'kill them with kindness' is great workplace advice until you're explaining to a judge why you brought a knife to the office. 'Your Honor, I was being KIND.' Now you're doing 80 hours community service at a children's hospital, which, you know, proves the system works.",
+      "People say I have a drug problem. I don't have a drug problem - I'm out of drugs. THAT'S the problem. Having drugs would be a budgeting problem at worst.",
+      "My name is Kathy, and I tried to make a stranger laugh at a funeral. Turns out 'inappropriate timing' isn't covered under Good Samaritan laws.",
+      "When I was a kid, my dad said there are stupid people on the other side of every door. I spent years looking for them. Turns out I'm surrounded by them. Might be one myself. The door thing was a metaphor I missed for like 20 years."
     ]
   },
-  "Dark Deadpan": {
-    "description": "Generate humor with a completely flat, emotionless delivery. State absurd or dark observations as if they're mundane facts. No enthusiasm, just matter-of-fact darkness.",
-    "is_default": false,
-    "blend_weight": 1.0,
-    "position": 0,
+  "Literal Spiral": {
+    "name": "Literal Interpretation Spirals",
+    "angle": 0,
+    "color": "#2C3E50",
+    "description": "Take common idioms or phrases and interpret them literally, then escalate the absurdity through airtight but deranged internal logic.",
+    "characteristics": [
+      "Common phrases taken literally",
+      "Escalating absurd consequences",
+      "Airtight insane logic",
+      "Authority figures follow the same logic"
+    ],
     "jokes": [
-      "I went to a motivational seminar. The speaker died halfway through. I guess that's motivation to live.",
-      "My therapist says I have abandonment issues. I told him he's probably right, then he cancelled our next three sessions.",
-      "I bought a self-help book on procrastination. I'll read it tomorrow. That was three years ago.",
-      "They say money can't buy happiness. I wouldn't know. I can't afford either.",
-      "I told my family I was depressed. They bought me a 'Get Well Soon' card. I'm not sick, just dead inside.",
-      "My life insurance policy covers everything except the will to live. Apparently that's a pre-existing condition.",
-      "I went speed dating. Everyone left before the timer went off. I think I set a record.",
-      "My doctor says I have the heart of a 20-year-old. I should probably give it back to him."
+      "They told me to 'break a leg' before my presentation. Now I'm in a cast explaining workers comp fraud to HR. Apparently 'theatrical encouragement' isn't a valid insurance claim.",
+      "'Early bird gets the worm' - okay so we're encouraging sleep deprivation and eating dirt now? This is why society is collapsing.",
+      "Someone said 'plenty of fish in the sea' after my breakup. I don't want to fuck a fish. That's both illegal and anatomically challenging."
     ]
   },
-  "Sarcastic": {
-    "description": "Generate humor dripping with sarcasm and irony. Use exaggerated praise to highlight flaws, mock societal expectations, and employ bitter wit.",
-    "is_default": false,
-    "blend_weight": 1.0,
-    "position": 1,
+  "Cynical Truth": {
+    "name": "Cynical Social Commentary",
+    "angle": 60,
+    "color": "#95A5A6",
+    "description": "Bill Hicks-style cynical truth-telling, angry at societal bullshit and exposing obvious contradictions.",
+    "characteristics": [
+      "Exposing hypocrisy",
+      "Challenging sacred cows",
+      "Matter-of-fact delivery of dark truths",
+      "No apologizing for darkness"
+    ],
     "jokes": [
-      "Oh great, another meeting that could have been an email. And by email, I mean a suicide note.",
-      "Thanks for asking how my weekend was. I reorganized my sock drawer twice. Living the dream.",
-      "Wow, working late again? Your dedication to avoiding your family is truly inspiring.",
-      "Oh wonderful, another team building exercise. Because nothing builds trust like trust falls with people who steal your lunch.",
-      "Fantastic, they're playing music in the elevator. Because what my existential crisis really needed was a jazz soundtrack.",
-      "Thanks for the feedback. I'll file it right next to my hopes and dreams - in the trash.",
-      "Oh lovely, another inspirational quote on the break room wall. Because nothing motivates like Comic Sans font wisdom.",
-      "Great job on that presentation. Really showed everyone how to turn five minutes of content into an hour of suffering."
+      "The Catholic Church moved pedophile priests around for decades. The Boy Scouts did the same thing. Maybe we should stop letting organizations with 'wholesome' branding near children.",
+      "We call it 'work-life balance' like they're supposed to be equal. One slowly kills you for money, the other you do for free. Real balanced.",
+      "Charity galas are just rich people cosplaying as compassionate so they can write off the champagne. It's poverty tourism with a tax break."
     ]
   },
-  "Nihilist": {
-    "description": "Generate humor that embraces the meaninglessness of existence. Find comedy in the absurdity of human efforts and the ultimate futility of life.",
-    "is_default": false,
-    "blend_weight": 1.0,
-    "position": 2,
+  "Meta-Absurdist": {
+    "name": "Self-Aware Meta-Humor",
+    "angle": 120,
+    "color": "#9B59B6",
+    "description": "Bo Burnham-style self-aware comedy that acknowledges the joke structure and comments on the premise itself.",
+    "characteristics": [
+      "Aware you're making jokes",
+      "Comments on the premise",
+      "Existential dread wrapped in observations",
+      "Support group confession format"
+    ],
     "jokes": [
-      "I used to worry about the future. Then I realized there isn't one. Problem solved.",
-      "They say life is what you make of it. I made a mistake.",
-      "I started a gratitude journal. Day one: grateful this won't matter when I'm dead.",
-      "My life coach asked what I wanted to achieve. I said heat death of the universe. We're making progress.",
-      "I meditate on the meaninglessness of existence. It's very calming because nothing matters anyway.",
-      "They say follow your dreams. My dreams are mostly about filing taxes and dying alone.",
-      "I read a book about purpose in life. It was fiction.",
-      "My bucket list is just one item: accept that the bucket doesn't matter."
+      "I'm about to say something fucked up... okay I said it. Now we all have to live with that. You can't unhear it. That's on you for listening.",
+      "This joke has three parts. Setup, misdirection, punchline. Except I just explained the structure so now it won't work. We're all trapped in this failed bit together.",
+      "My therapist says I use humor to deflect from real emotions. I said 'that's hilarious' and she didn't laugh. Awkward."
     ]
   },
-  "Cynical": {
-    "description": "Generate humor that expects the worst from people and situations. Mock human nature, institutions, and societal pretenses with bitter wisdom.",
-    "is_default": false,
-    "blend_weight": 1.0,
-    "position": 3,
+  "Deadpan Absurd": {
+    "name": "Deadpan Non-Sequiturs",
+    "angle": 180,
+    "color": "#34495E",
+    "description": "Mitch Hedberg-style deadpan delivery with absurdist one-liners and surreal observations.",
+    "characteristics": [
+      "Non-sequiturs",
+      "One-liner structure",
+      "Surreal logic",
+      "Matter-of-fact impossibilities"
+    ],
     "jokes": [
-      "They say there's someone for everyone. Mine is probably in prison or therapy.",
-      "I believe in human potential. Specifically, the potential for disappointment.",
-      "Love is patient, love is kind. Love is also a marketing scheme by greeting card companies.",
-      "I went to a networking event. Everyone there was just as miserable as I expected.",
-      "They say honesty is the best policy. Clearly they've never tried lying to get through a job interview.",
-      "Optimism is just inexperience with a good attitude.",
-      "I trust people. I trust them to disappoint me, and they never let me down.",
-      "Hope is disappointment waiting to happen. I've eliminated the waiting."
+      "I'm against picketing, but I don't know how to show it.",
+      "An escalator can never break. It can only become stairs. You'd never see 'Escalator Out of Order.' Just 'Escalator Temporarily Stairs. Sorry for the convenience.'",
+      "I haven't slept for ten days, because that would be too long."
     ]
   },
-  "Absurdist": {
-    "description": "Generate humor that embraces the illogical and surreal. Create bizarre scenarios and nonsensical connections that highlight life's absurdity.",
-    "is_default": false,
-    "blend_weight": 1.0,
-    "position": 4,
+  "Religious Deconstruction": {
+    "name": "Religious/Cultural Absurdity",
+    "angle": 240,
+    "color": "#E74C3C",
+    "description": "Challenge sacred cows by pointing out obvious contradictions using historical facts and linguistic precision.",
+    "characteristics": [
+      "Exposing religious hypocrisy",
+      "Historical fact-checking",
+      "Linguistic pedantry",
+      "Technical accuracy for comedy"
+    ],
     "jokes": [
-      "I taught my goldfish existential philosophy. Now he just floats upside down contemplating the meaninglessness of fish food.",
-      "My alarm clock started setting me. I wake up at random times to disappoint inanimate objects.",
-      "I went to a restaurant where they serve depression as a side dish. It came with everything automatically.",
-      "My therapist is a rubber duck. We have the same qualifications but he's a better listener.",
-      "I got a job at a company that makes nothing. Business is booming because everyone needs nothing.",
-      "My shadow applied for a job without me. Now it earns more and has better benefits.",
-      "I bought shoes that walk themselves. Now I follow them to work every day.",
-      "My refrigerator started a book club. The only book is the warranty manual, but the discussions are enlightening."
+      "Moses came down from the mountain with 'rays of light' coming from his head. You know what looks like rays? Horns. Pan's Labyrinth Moses would explain a lot about the Old Testament.",
+      "The King James Bible is a 'version' not THE Bible. Made by the gayest, most closeted king in history. Your grandmother's favorite scripture is fanfiction by a repressed monarch.",
+      "Zeus and Jesus - both sons of gods, both born of virgins, linguistic cousins through Latin. We just picked the wrong mythology to base Sundays around."
     ]
   },
-  "Dark": {
-    "description": "Generate humor that finds comedy in morbid, taboo, or traditionally serious topics. Use shock value and transgressive themes while maintaining wit.",
-    "is_default": false,
-    "blend_weight": 1.0,
-    "position": 5,
+  "Fuckup Privilege": {
+    "name": "Drug Addict Privilege Framework",
+    "angle": 300,
+    "color": "#1C1C1C",
+    "description": "Present societally unacceptable behavior as having hidden benefits, delivered deadpan as actual life advice.",
+    "characteristics": [
+      "Hidden benefits of dysfunction",
+      "Low expectations strategy",
+      "Deadpan life advice",
+      "Nobody asks you for favors"
+    ],
     "jokes": [
-      "I told my family I wanted to be cremated. They said 'Why wait?' I love their enthusiasm.",
-      "My dating profile says 'Looking for someone to grow old with.' So far I've only attracted vampires.",
-      "I went to a funeral and they asked if I had any final words. I said 'This seems permanent.' Everyone cried harder.",
-      "My life insurance salesman called. I told him business must be dead. He said 'Not yet, but I'm working on it.'",
-      "I bought a cemetery plot. It's the first investment I'm sure I'll use.",
-      "My doctor said I have six months to live. I said 'Can we make it three? I have plans.'",
-      "I started a support group for pessimists. Nobody showed up. It was perfect.",
-      "They say laughter is the best medicine. Clearly they've never tried morphine."
+      "Being a known fuckup has privileges. Nobody asks you to help them move. They don't expect birthday cards. You show up on time once and they throw a parade.",
+      "I told people I'm unreliable. Now when I disappoint them, they're like 'yeah that tracks.' It's like having diplomatic immunity but for being terrible.",
+      "The key to happiness is lowering everyone's expectations to the floor. Then tunnel under the floor. Now you're a mole person and nobody expects anything."
     ]
   }
 }
