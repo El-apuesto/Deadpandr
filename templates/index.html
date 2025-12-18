@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadpandr - AI Comedy Writing Assistant | Dark Humor Generator</title>
+    <meta name="title" content="Deadpandr - AI Comedy Writing Assistant | Dark Humor Generator">
+    <meta name="description" content="Generate original dark comedy with AI. Blend absurdist, cynical, and deadpan humor styles. Free comedy writing tool for stand-up, sketches, and social media content.">
+    <meta name="keywords" content="comedy writer, AI joke generator, dark humor, stand-up comedy, comedy writing tool, absurdist humor, joke generator, comedy assistant, deadpan comedy, cynical humor">
+    <meta name="author" content="Deadpandr">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://deadpandr.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deadpandr.com">
+    <meta property="og:title" content="Deadpandr - AI Comedy Writing Assistant">
+    <meta property="og:description" content="Generate original dark comedy with AI. Blend absurdist, cynical, and deadpan humor styles.">
+    <meta property="og:image" content="https://deadpandr.com/static/images/deadpandr-bg.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://deadpandr.com">
+    <meta property="twitter:title" content="Deadpandr - AI Comedy Writing Assistant">
+    <meta property="twitter:description" content="Generate original dark comedy with AI. Blend absurdist, cynical, and deadpan humor styles.">
+    <meta property="twitter:image" content="https://deadpandr.com/static/images/deadpandr-bg.jpg">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Deadpandr",
+      "alternateName": "Deadpandr Comedy Generator",
+      "url": "https://deadpandr.com",
+      "description": "AI-powered comedy writing assistant that generates original dark humor, absurdist jokes, and cynical commentary",
+      "applicationCategory": "EntertainmentApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+    
+    <header role="banner">
+        <nav aria-label="Main navigation">
+            <div class="logo">
+                <h1>Deadpandr</h1>
+            </div>
+            <ul>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#styles">Comedy Styles</a></li>
+                <li><a href="#generator">Generate</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <h1 id="hero-heading">AI Comedy Writing Assistant for Dark Humor</h1>
+            <p class="hero-subtitle">Blend absurdist, cynical, and deadpan styles. Generate original stand-up material, sketches, and social media content.</p>
+            <a href="#generator" class="cta-button" aria-label="Start generating comedy">Start Writing Comedy</a>
+        </section>
+        
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works" aria-labelledby="how-heading">
+            <h2 id="how-heading">How Deadpandr Works</h2>
+            <div class="steps">
+                <article class="step">
+                    <h3>1. Choose Your Topic</h3>
+                    <p>Enter any subject - relationships, work, existential dread, or everyday absurdities.</p>
+                </article>
+                <article class="step">
+                    <h3>2. Blend Comedy Styles</h3>
+                    <p>Use the circular style mixer to combine different comedy approaches from absurdist to cynical.</p>
+                </article>
+                <article class="step">
+                    <h3>3. Generate Original Material</h3>
+                    <p>Get AI-generated jokes that match your voice, ready for stand-up, scripts, or social media.</p>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Generator Section -->
+        <section id="generator" class="generator" aria-labelledby="generator-heading">
+            <h2 id="generator-heading">Comedy Style Blender</h2>
+            <p>Drag the center point toward any style to blend comedy approaches.</p>
+            
+            <div class="generator-container">
+                <div class="canvas-wrapper">
+                    <canvas id="style-canvas" width="500" height="500" aria-label="Interactive comedy style blender"></canvas>
+                </div>
+                
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="topic-input">Topic:</label>
+                        <input type="text" id="topic-input" placeholder="e.g., dating, work, mortality">
+                    </div>
+                    
+                    <div class="control-group">
+                        <h3>Current Style Blend:</h3>
+                        <div id="weights-display" aria-live="polite">Default: 100%</div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="num-jokes">Number of Jokes:</label>
+                        <select id="num-jokes">
+                            <option value="3">3</option>
+                            <option value="5" selected>5</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    
+                    <button id="generate-btn" class="generate-button">Generate Comedy</button>
+                </div>
+            </div>
+            
+            <div id="joke-output" class="joke-output" role="region" aria-live="polite"></div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently Asked Questions</h2>
+            <details>
+                <summary>What is Deadpandr?</summary>
+                <p>Deadpandr is an AI-powered comedy writing assistant that generates original dark humor, absurdist jokes, and cynical commentary.</p>
+            </details>
+            <details>
+                <summary>How does the style blender work?</summary>
+                <p>The circular style blender lets you mix different comedy approaches. Drag the center point toward any style to blend influences.</p>
+            </details>
+            <details>
+                <summary>Is Deadpandr free to use?</summary>
+                <p>Yes! Deadpandr is completely free to use for generating comedy material.</p>
+            </details>
+        </section>
+    </main>
+    
+    <footer role="contentinfo">
+        <p>&copy; 2025 Deadpandr. AI Comedy Writing Assistant.</p>
+    </footer>
+    
+    <script src="/static/js/style-blender.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
