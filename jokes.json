@@ -1,6 +1,24 @@
 {
+  "Default": {
+    "description": "Base style - balanced dark humor with wit and edge. Mix observational comedy with slightly twisted perspectives on everyday life.",
+    "is_default": true,
+    "position": "center",
+    "jokes": [
+      "I'm not saying I'm antisocial, but my phone's most used app is 'Do Not Disturb.'",
+      "I went to the gym yesterday. That's enough exercise for the rest of the decade.",
+      "My life is like a romantic comedy, except it's neither romantic nor funny.",
+      "I have a great relationship with failure. We're practically inseparable.",
+      "I tried to be normal once. Worst two minutes of my life.",
+      "My spirit animal is a sloth having an existential crisis.",
+      "I don't have trust issues. I have trust answers, and they're all 'no.'",
+      "I'm on a whiskey diet. I've lost three days already."
+    ]
+  },
   "Dark Deadpan": {
     "description": "Generate humor with a completely flat, emotionless delivery. State absurd or dark observations as if they're mundane facts. No enthusiasm, just matter-of-fact darkness.",
+    "is_default": false,
+    "blend_weight": 1.0,
+    "position": 0,
     "jokes": [
       "I went to a motivational seminar. The speaker died halfway through. I guess that's motivation to live.",
       "My therapist says I have abandonment issues. I told him he's probably right, then he cancelled our next three sessions.",
@@ -14,6 +32,9 @@
   },
   "Sarcastic": {
     "description": "Generate humor dripping with sarcasm and irony. Use exaggerated praise to highlight flaws, mock societal expectations, and employ bitter wit.",
+    "is_default": false,
+    "blend_weight": 1.0,
+    "position": 1,
     "jokes": [
       "Oh great, another meeting that could have been an email. And by email, I mean a suicide note.",
       "Thanks for asking how my weekend was. I reorganized my sock drawer twice. Living the dream.",
@@ -27,6 +48,9 @@
   },
   "Nihilist": {
     "description": "Generate humor that embraces the meaninglessness of existence. Find comedy in the absurdity of human efforts and the ultimate futility of life.",
+    "is_default": false,
+    "blend_weight": 1.0,
+    "position": 2,
     "jokes": [
       "I used to worry about the future. Then I realized there isn't one. Problem solved.",
       "They say life is what you make of it. I made a mistake.",
@@ -40,6 +64,9 @@
   },
   "Cynical": {
     "description": "Generate humor that expects the worst from people and situations. Mock human nature, institutions, and societal pretenses with bitter wisdom.",
+    "is_default": false,
+    "blend_weight": 1.0,
+    "position": 3,
     "jokes": [
       "They say there's someone for everyone. Mine is probably in prison or therapy.",
       "I believe in human potential. Specifically, the potential for disappointment.",
@@ -53,6 +80,9 @@
   },
   "Absurdist": {
     "description": "Generate humor that embraces the illogical and surreal. Create bizarre scenarios and nonsensical connections that highlight life's absurdity.",
+    "is_default": false,
+    "blend_weight": 1.0,
+    "position": 4,
     "jokes": [
       "I taught my goldfish existential philosophy. Now he just floats upside down contemplating the meaninglessness of fish food.",
       "My alarm clock started setting me. I wake up at random times to disappoint inanimate objects.",
@@ -66,6 +96,9 @@
   },
   "Dark": {
     "description": "Generate humor that finds comedy in morbid, taboo, or traditionally serious topics. Use shock value and transgressive themes while maintaining wit.",
+    "is_default": false,
+    "blend_weight": 1.0,
+    "position": 5,
     "jokes": [
       "I told my family I wanted to be cremated. They said 'Why wait?' I love their enthusiasm.",
       "My dating profile says 'Looking for someone to grow old with.' So far I've only attracted vampires.",
@@ -75,19 +108,6 @@
       "My doctor said I have six months to live. I said 'Can we make it three? I have plans.'",
       "I started a support group for pessimists. Nobody showed up. It was perfect.",
       "They say laughter is the best medicine. Clearly they've never tried morphine."
-    ]
-  },
-  "Default": {
-    "description": "Generate edgy humor with a balance of darkness and wit. Mix observational comedy with slightly twisted perspectives on everyday life.",
-    "jokes": [
-      "I'm not saying I'm antisocial, but my phone's most used app is 'Do Not Disturb.'",
-      "I went to the gym yesterday. That's enough exercise for the rest of the decade.",
-      "My life is like a romantic comedy, except it's neither romantic nor funny.",
-      "I have a great relationship with failure. We're practically inseparable.",
-      "I tried to be normal once. Worst two minutes of my life.",
-      "My spirit animal is a sloth having an existential crisis.",
-      "I don't have trust issues. I have trust answers, and they're all 'no.'",
-      "I'm on a whiskey diet. I've lost three days already."
     ]
   }
 }
