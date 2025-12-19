@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadpandr - AI Comedy Writing Assistant | Dark Humor Generator</title>
+    <meta name="description" content="Generate original dark comedy with AI. Blend absurdist, cynical, and deadpan humor styles. Free comedy writing tool for stand-up, sketches, and social media content.">
+    <meta name="keywords" content="comedy writer, AI joke generator, dark humor, stand-up comedy, comedy writing tool, absurdist humor, joke generator, comedy assistant, deadpan comedy, cynical humor">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://deadpandr.com">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deadpandr.com">
+    <meta property="og:title" content="Deadpandr - AI Comedy Writing Assistant">
+    <meta property="og:description" content="Generate original dark comedy with AI. Blend absurdist, cynical, and deadpan humor styles.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://deadpandr.com">
+    <meta property="twitter:title" content="Deadpandr - AI Comedy Writing Assistant">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Deadpandr",
+      "url": "https://deadpandr.com",
+      "description": "AI-powered comedy writing assistant that generates original dark humor, absurdist jokes, and cynical commentary",
+      "applicationCategory": "EntertainmentApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-color: #FF1B6D;
+            --bg-dark: #0A0F19;
+            --bg-card: rgba(30, 35, 45, 0.95);
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0A0F19 0%, #1a2332 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { padding: 20px 0; text-align: center; }
+        h1 { font-size: 3rem; margin-bottom: 10px; color: var(--primary-color); }
+        .subtitle { color: var(--text-secondary); font-size: 1.2rem; margin-bottom: 40px; }
+        .generator-section { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 40px 0; }
+        @media (max-width: 768px) { .generator-section { grid-template-columns: 1fr; } }
+        .canvas-wrapper { display: flex; justify-content: center; }
+        #style-canvas {
+            border: 2px solid rgba(255,255,255,0.2);
+            background: rgba(20, 25, 35, 0.9);
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        .controls {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+        .control-group { margin-bottom: 20px; }
+        .control-group label { display: block; margin-bottom: 8px; font-weight: 600; }
+        .control-group input, .control-group select {
+            width: 100%;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-primary);
+            font-size: 16px;
+        }
+        #weights-display {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            min-height: 100px;
+        }
+        .generate-button {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .generate-button:hover { background: #ff3380; transform: translateY(-2px); }
+        .joke-output {
+            margin-top: 40px;
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            min-height: 200px;
+        }
+        .joke-output h3 { color: var(--primary-color); margin-bottom: 20px; }
+        .joke-output p {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--primary-color);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>deadpandr</h1>
+            <p class="subtitle">AI Comedy Writing Assistant - Blend Your Style</p>
+        </header>
+        
+        <main>
+            <div class="generator-section">
+                <div class="canvas-wrapper">
+                    <canvas id="style-canvas" width="500" height="500"></canvas>
+                </div>
+                
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="topic-input">Topic:</label>
+                        <input type="text" id="topic-input" placeholder="e.g., dating, work, mortality">
+                    </div>
+                    
+                    <div class="control-group">
+                        <h3>Current Style Blend:</h3>
+                        <div id="weights-display">Default: 100%</div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="num-jokes">Number of Jokes:</label>
+                        <select id="num-jokes">
+                            <option value="3">3</option>
+                            <option value="5" selected>5</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    
+                    <button id="generate-btn" class="generate-button">Generate Comedy</button>
+                </div>
+            </div>
+            
+            <div id="joke-output" class="joke-output"></div>
+        </main>
+    </div>
+    
+    <script src="/static/js/style-blender.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

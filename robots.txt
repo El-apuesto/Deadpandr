@@ -1,10 +1,1 @@
-User-agent: *
-Allow: /
-Sitemap: https://deadpandr.com/sitemap.xml
-
-# Block admin pages
-Disallow: /admin/
-Disallow: /api/
-
-# Crawl delay
-Crawl-delay: 1
+User-agent: *\nAllow: /\nSitemap: https://deadpandr.com/sitemap.xml\n\nDisallow: /api/\n\nCrawl-delay: 1
